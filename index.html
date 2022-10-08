@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap website </title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1>Gamers</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">about us</a>
+            <a class="nav-link" href="#services">services</a>
+            <a class="nav-link" href="#portfolio">portfolio</a>
+            <a class="nav-link" href="#team">team</a>
+            <a class="nav-link" href="#pricing">pricing</a>
+            <a class="nav-link" href="#faq">faq</a>
+            <a class="nav-link" href="#contact">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./dist/images/hero-1-small.jpg"
+              class="d-block w-100"
+              alt="Super Mario Game"
+              srcset="./dist/images/hero-1-big.jpg 992w"
+            />
+            <div class="carousel-caption">
+              <h5>Lorem ipsum dolor sit.</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                tenetur recusandae nemo, aperiam laborum ullam..
+              </p>
+              <button type="button" class="btn btn-primary">
+                Explore More
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./dist/images/hero-2-small.jpg"
+              class="d-block w-100"
+              alt="Gogle Vr"
+              srcset="./dist/images/hero-2-big.jpg 992w"
+            />
+            <div class="carousel-caption">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, autem.
+              </p>
+              <button type="button" class="btn btn-primary">
+                Explore More
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./dist/images/hero-3-small.jpg"
+              class="d-block w-100"
+              alt="Super Mario Game"
+              srcset="./dist/images/hero-3-big.jpg 992w"
+            />
+            <div class="carousel-caption">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                distinctio eaque atque hic!
+              </p>
+              <button type="button" class="btn btn-primary">
+                Explore More
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <main class="main">
+      <section id="about" class="about section-padding">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2 class="section-heading">about us</h2>
+            <p class="section-info">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              aut saepe earum autem iste?
+            </p>
+            <span class="section-line"></span>
+          </header>
+          <div class="about-container row g-5">
+            <div class="col-lg-6">
+              <img
+                class="about-img img-fluid w-100 rounded"
+                src="./dist/images/about.jpg"
+                alt="Game team"
+              />
+            </div>
+            <div class="content col-lg-6 pt-lg-3">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                placeat dolor deserunt illum ab earum architecto molestiae,
+                fuga, maxime commodi voluptas est quia? Soluta est, laborum
+                cumque adipisci qui vitae?
+              </b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi optio nobis magnam aut inventore illum repellat tempore
+                dolorem est et libero blanditiis iusto, ut aliquam provident.
+                Quos numquam voluptatibus deserunt? Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Voluptate facilis est sint
+                pariatur. Iure voluptatem, consectetur nihil debitis quod
+                aperiam vero sit nam ratione, laboriosam quo fugiat nemo laborum
+                sequi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services section-padding">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2 class="section-heading">services</h2>
+            <p class="section-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae vitae incidunt inventore illo, voluptas quasi harum
+              provident exercitationem illum labore!
+            </p>
+            <span class="section-line"></span>
+          </header>
+          <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="service-box">
+                <i class="bi bi-controller"></i>
+                <h3>game development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis nobis officia necessitatibus incidunt aut quisquam
+                  quae quas dicta veniam doloribus?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="service-box">
+                <i class="bi bi-controller"></i>
+                <h3>game development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis nobis officia necessitatibus incidunt aut quisquam
+                  quae quas dicta veniam doloribus?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="service-box">
+                <i class="bi bi-controller"></i>
+                <h3>game development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis nobis officia necessitatibus incidunt aut quisquam
+                  quae quas dicta veniam doloribus?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="service-box">
+                <i class="bi bi-controller"></i>
+                <h3>game development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis nobis officia necessitatibus incidunt aut quisquam
+                  quae quas dicta veniam doloribus?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="service-box">
+                <i class="bi bi-controller"></i>
+                <h3>game development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis nobis officia necessitatibus incidunt aut quisquam
+                  quae quas dicta veniam doloribus?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="service-box">
+                <i class="bi bi-controller"></i>
+                <h3>game development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis nobis officia necessitatibus incidunt aut quisquam
+                  quae quas dicta veniam doloribus?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team" class="team section-padding">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2 class="section-heading">team</h2>
+            <p class="section-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae vitae incidunt inventore illo, voluptas quasi harum
+            </p>
+            <span class="section-line"></span>
+          </header>
+          <div
+            class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          >
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./dist/images/team-1.jpg"
+                  class="card-img-top"
+                  alt="Sharon Thane - developer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sharon Thane - developer</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Rerum libero vel provident praesentium tenetur soluta ad
+                    veniam, ratione, doloribus quos commodi id delectus quae
+                    quidem illum? Labore.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./dist/images/team-2.jpg"
+                  class="card-img-top"
+                  alt="Lisa White - designer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lisa White - designer</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Atque, temporibus. Cum deleniti aspernatur vitae adipisci
+                    esse reprehenderit exercitationem vero illum quas magnam
+                    totam soluta delectus libero, expedita perspiciatis nam
+                    dicta?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./dist/images/team-3.jpg"
+                  class="card-img-top"
+                  alt="Oscar Barrys - CEO"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Oscar Barrys - CEO</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nihil earum ab doloribus. Nostrum, omnis odit, voluptate
+                    incidunt unde saepe, delectus beatae voluptas asperiores
+                    labore molestias.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./dist/images/team-4.jpg"
+                  class="card-img-top"
+                  alt="Anna Black - project menager"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anna Black - project menager</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deserunt natus placeat totam veritatis earum rerum enim odio
+                    ut vitae facilis!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio section-padding">
+        <header class="section-header text-center">
+          <h2 class="section-heading">portfolio</h2>
+          <p class="section-info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repudiandae vitae incidunt inventore illo, voluptas quasi harum
+          </p>
+          <span class="section-line"></span>
+        </header>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+            <div class="col">
+              <img
+                src="./dist/images/portfolio-1.jpg"
+                alt="portfolio project"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./dist/images/portfolio-2.jpg"
+                alt="portfolio project"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./dist/images/portfolio-3.jpg"
+                alt="portfolio project"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./dist/images/portfolio-4.jpg"
+                alt="portfolio project"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./dist/images/portfolio-5.jpg"
+                alt="portfolio project"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./dist/images/portfolio-6.jpg"
+                alt="portfolio project"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="section-padding pricing">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2 class="section-heading">pricing</h2>
+            <p class="section-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae vitae incidunt inventore illo, voluptas quasi harum
+            </p>
+            <span class="section-line"></span>
+          </header>
+          <div class="row row-cols-1 justify-content-evenly row-cols-md-3 g-3">
+            <div class="col">
+              <div class="pricing-card">
+                <h3>mobile</h3>
+                <hr />
+                <p><span>game length:</span>short</p>
+                <p><span>graphics:</span>average</p>
+                <p><span>online:</span>none</p>
+                <h4 class="price-amount">30$</h4>
+                <button type="button" class="btn btn-secondary">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="pricing-card">
+                <h3>mobile, PC</h3>
+                <hr />
+                <p><span>game length:</span>average</p>
+                <p><span>graphics:</span>pretty</p>
+                <p><span>online:</span>yes</p>
+                <h4 class="price-amount">50$</h4>
+                <button type="button" class="btn btn-primary">Order Now</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="pricing-card">
+                <h3>mobile , PC, Console</h3>
+                <hr />
+                <p><span>game length:</span>long</p>
+                <p><span>graphics:</span>the prettiest</p>
+                <p><span>online:</span>yes</p>
+                <h4 class="price-amount">90$</h4>
+                <button type="button" class="btn btn-secondary">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="faq" class="faq section-padding">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-heading">faq</h2>
+          <p class="section-info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repudiandae vitae incidunt inventore illo, voluptas quasi harum
+          </p>
+          <span class="section-line"></span>
+        </header>
+        <div class="row">
+          <div class="col accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Lorem ipsum dolor sit amet?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <strong
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit, libero nostrum hic mollitia iure
+                    culpa?</strong
+                  >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+                  iusto ad totam perferendis sit ipsum repellat quasi? Id
+                  eveniet, maxime odio nostrum voluptates ut facere magni rerum
+                  commodi molestias unde numquam, vero enim aut ab fugiat. Earum
+                  nostrum enim illo distinctio dolor aspernatur vitae nam. Neque
+                  culpa sunt aspernatur magnam.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Lorem ipsum dolor sit?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus illo facere commodi nostrum eum deserunt,
+                  consectetur maxime! Vel magnam eligendi maxime voluptatum
+                  consequatur pariatur atque praesentium ducimus consectetur
+                  aspernatur. Dolorum deserunt natus asperiores, delectus nemo
+                  amet fuga in perspiciatis fugit voluptatibus quod facilis
+                  numquam laboriosam aut voluptas ex dignissimos laudantium?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Lorem ipsum dolor sit amet consectetur?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis debitis quo aut consequatur harum consectetur
+                  perferendis natus quas, laborum quia tempora ipsum ad
+                  asperiores eaque.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-heading">contact</h2>
+          <p class="section-info">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repudiandae vitae incidunt inventore illo, voluptas quasi harum
+          </p>
+          <span class="section-line"></span>
+        </header>
+        <div class="row row-cols-1 row-cols-md-3 gy-3">
+          <div class="col">
+            <div class="contact-option">
+              <i class="bi bi-telephone-fill"></i>
+              <p>phone:</p>
+              <a href="#">485 204 294</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contact-option">
+              <i class="bi bi-envelope"></i>
+              <p>mail:</p>
+              <a href="#">gamers@contact.com</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contact-option">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>location:</p>
+              <a href="#">NY 123 Main Street</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-nav">
+        <a class="nav-link" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#about">about us</a>
+        <a class="nav-link" href="#services">services</a>
+        <a class="nav-link" href="#portfolio">portfolio</a>
+        <a class="nav-link" href="#team">team</a>
+        <a class="nav-link" href="#pricing">pricing</a>
+        <a class="nav-link" href="#faq">faq</a>
+        <a class="nav-link" href="#contact">contact</a>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/js/main.min.js"></script>
+  </body>
+</html>
