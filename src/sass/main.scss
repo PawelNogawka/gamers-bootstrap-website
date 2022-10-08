@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
+}
+
 .section-padding {
   padding: 3rem 1rem;
 }
